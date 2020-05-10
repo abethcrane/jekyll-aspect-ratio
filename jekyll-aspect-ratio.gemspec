@@ -1,14 +1,10 @@
 Gem::Specification.new do |s|
     s.name        = 'jekyll-aspect-ratio'
-    s.version     = '0.0.0'
+    s.version     = '0.0.1'
     s.date        = '2020-05-10'
     s.summary     = "A Jekyll plugin to create a custom Liquid tag that returns the aspect ratio of an image or video"
     s.description = <<-EOF
-Jekyll-Aspect-Ratio enables the use of a custom Liquid tag {% aspectratio filepath %}, to find the aspect ratio of an image or video file. 
-
-Example use cases:
-- Specify the flex-grow value of an item so that a series of items of different aspect ratios can fill up one row, all being the same height
-- Sort or separate items by aspect ratio, to display horizontal vs vertical videos together (aspect ratio < 1 is a portrait item, >1 is landscape)
+This plugin enables the use of a custom Liquid tag {% aspectratio filepath %}, to find the aspect ratio of an image or video file. This can be used for e.g. specifying the flex-grow value of an item to display items of different aspect ratios on one line at the same height, or to separate out horizontal or vertical videos (aspect ratio > or < than 1).
 EOF
     s.authors     = ["Beth Crane"]
     s.email       = "hello@bethcrane.com"
